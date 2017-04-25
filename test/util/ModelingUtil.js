@@ -4,10 +4,10 @@ var TestHelper = require('../helper');
 
 var getCenter = require('diagram-js/lib/layout/LayoutUtil').getCenter;
 
-var isArray = require('lodash/lang/isArray'),
-    map = require('lodash/collection/map'),
-    pick = require('lodash/object/pick'),
-    assign = require('lodash/object/assign');
+var isArray = require('lodash/isArray'),
+    map = require('lodash/map'),
+    pick = require('lodash/pick'),
+    assign = require('lodash/assign');
 
 
 function invoke(fn) {

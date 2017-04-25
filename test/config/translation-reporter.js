@@ -3,8 +3,8 @@
 var fs = require('fs');
 var path = require('path');
 
-var unique = require('lodash/array/unique');
-var sortBy = require('lodash/collection/sortBy');
+var unique = require('lodash/uniq');
+var sortBy = require('lodash/sortBy');
 
 function TranslationReporter() {
   process.env.TRANSLATIONS = 'enabled';

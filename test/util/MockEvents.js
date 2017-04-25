@@ -1,6 +1,6 @@
 'use strict';
 
-var assign = require('lodash/object/assign');
+var assign = require('lodash/assign');
 
 var EventBus = require('diagram-js/lib/core/EventBus');
 

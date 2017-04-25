@@ -72,13 +72,13 @@
     "watchify": "^3.7.0"
   },
   "dependencies": {
-    "bpmn-moddle": "^0.14.0",
-    "diagram-js": "^0.19.3",
-    "diagram-js-direct-editing": "^0.17.1",
+    "bpmn-moddle": "https://github.com/hrishabhkumar/bpmn-moddle.git",
+    "diagram-js": "https://github.com/hrishabhkumar/diagram-js.git",
+    "diagram-js-direct-editing": "https://github.com/hrishabhkumar/diagram-js-direct-editing.git",
     "diagram-js-origin": "^0.15.1",
     "ids": "^0.2.0",
     "inherits": "^2.0.1",
-    "lodash": "^3.0.1",
+    "lodash": "^4.17.4",
     "min-dom": "^0.2.0",
     "object-refs": "^0.1.1",
     "tiny-svg": "^0.1.1"

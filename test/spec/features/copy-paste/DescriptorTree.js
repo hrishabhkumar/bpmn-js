@@ -1,6 +1,7 @@
 'use strict';
 
-var forEach = require('lodash/collection/forEach');
+var forEach = require('lodash/forEach'),
+    bind  = require('lodash/bind');
 
 
 function DescriptorTree(tree) {
@@ -8,19 +9,19 @@ function DescriptorTree(tree) {
   this._tree = {};
   this._length = 0;
 
-  forEach(tree, function(branch, depth) {
+  forEach(tree, bind(function(branch, depth) {
     if (branch.length) {
       this._length += 1;
     }
 
-    forEach(branch, function(element) {
+    forEach(branch, bind(function(element) {
 
       element.depth = parseInt(depth, 10);
 
       this._tree[element.id] = element;
-    }, this);
+    }, this));
 
-  }, this);
+  }, this));
 }
 
 module.exports = DescriptorTree;
